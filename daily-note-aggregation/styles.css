@@ -44,6 +44,27 @@ If your plugin does not need CSS, delete this file.
 	color: var(--h2-color);
 	border-bottom: 1px solid var(--border-color);
 	padding-bottom: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.daily-note-delete-btn {
+	background-color: transparent;
+	color: var(--text-error, #ff5353);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 4px 8px;
+	font-size: 0.6em;
+	cursor: pointer;
+	box-shadow: none;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.daily-note-delete-btn:hover {
+	background-color: var(--background-modifier-error, #ff5353);
+	color: var(--text-on-accent, #ffffff);
+	border-color: var(--text-error, #ff5353);
 }
 
 .daily-note-link {

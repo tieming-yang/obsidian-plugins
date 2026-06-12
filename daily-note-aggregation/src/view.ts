@@ -1,4 +1,4 @@
-import { ItemView, WorkspaceLeaf, MarkdownRenderer, Component } from 'obsidian';
+import { ItemView, WorkspaceLeaf, MarkdownRenderer, Component, Notice } from 'obsidian';
 
 export const VIEW_TYPE_DAILY_NOTE_AGGREGATION = 'daily-note-aggregation-view';
 
@@ -54,6 +54,24 @@ export class DailyNoteAggregationView extends ItemView {
 			link.addEventListener('click', (e) => {
 				e.preventDefault();
 				this.app.workspace.getLeaf('tab').openFile(file);
+			});
+
+			const deleteBtn = header.createEl('button', {
+				text: 'Delete',
+				cls: 'daily-note-delete-btn',
+			});
+			deleteBtn.addEventListener('click', async (e) => {
+				e.preventDefault();
+				const confirmDelete = confirm(`Are you sure you want to permanently delete "${file.basename}"?`);
+				if (confirmDelete) {
+					try {
+						await this.app.vault.delete(file);
+						new Notice(`Deleted "${file.basename}"`);
+						await this.onOpen();
+					} catch (err) {
+						new Notice(`Error deleting note: ${err}`);
+					}
+				}
 			});
 
 			const contentContainer = noteSection.createDiv({ cls: 'daily-note-content' });
