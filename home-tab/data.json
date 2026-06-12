@@ -1,0 +1,56 @@
+{
+  "logoType": "lucideIcon",
+  "logo": {
+    "lucideIcon": "snowflake",
+    "imagePath": "",
+    "imageLink": "1. [# A deep dive into React Fiber](https://blog.logrocket.com/deep-dive-react-fiber/#:~:text=React%20Fiber%20is%20an%20internal,long%2Dstanding%20issues%20in%20React.) 2. [whatthefuck.isComposition](https://whatthefuck.is/composition)    ![[Snow Yáng-JustJavaScript.com-certificate.pdf]]  >Every a while, I feel overwhelmed. By all the things that I wanna learn."
+  },
+  "logoScale": 1,
+  "iconColorType": "default",
+  "wordmark": "Hello Yang",
+  "customFont": "interfaceFont",
+  "fontSize": "5rem",
+  "fontColorType": "default",
+  "fontWeight": 600,
+  "maxResults": 5,
+  "showbookmarkedFiles": true,
+  "showRecentFiles": true,
+  "maxRecentFiles": 5,
+  "storeRecentFile": true,
+  "showPath": true,
+  "selectionHighlight": "default",
+  "showShortcuts": true,
+  "markdownOnly": false,
+  "unresolvedLinks": false,
+  "recentFilesStore": [
+    {
+      "filepath": "2026/2026-06-10.md",
+      "timestamp": 1781228861325
+    },
+    {
+      "filepath": "2026/人生殺青 - 謊殺.md",
+      "timestamp": 1781228860889
+    },
+    {
+      "filepath": "2026/環-筆記.md",
+      "timestamp": 1781228859934
+    },
+    {
+      "filepath": "2026/節點報告.md",
+      "timestamp": 1781228859066
+    },
+    {
+      "filepath": "2026/beacon.md",
+      "timestamp": 1781047699295
+    }
+  ],
+  "bookmarkedFileStore": [],
+  "searchDelay": 0,
+  "replaceNewTabs": true,
+  "newTabOnStart": false,
+  "closePreviousSessionTabs": false,
+  "omnisearch": false,
+  "showOmnisearchExcerpt": true,
+  "showStarredFiles": true,
+  "starredFileStore": []
+}

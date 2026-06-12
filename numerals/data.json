@@ -1,0 +1,19 @@
+{
+  "resultSeparator": " → ",
+  "layoutStyle": "AnswerInline",
+  "alternateRowColor": false,
+  "defaultRenderStyle": "SyntaxHighlight",
+  "hideLinesWithoutMarkupWhenEmitting": true,
+  "hideEmitterMarkupInInput": true,
+  "dollarSymbolCurrency": {
+    "symbol": "$",
+    "currency": "USD"
+  },
+  "yenSymbolCurrency": {
+    "symbol": "¥",
+    "currency": "JPY"
+  },
+  "provideSuggestions": true,
+  "suggestionsIncludeMathjsSymbols": false,
+  "numberFormat": "System"
+}
