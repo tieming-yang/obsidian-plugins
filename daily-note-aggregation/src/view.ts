@@ -15,6 +15,10 @@ export class DailyNoteAggregationView extends ItemView {
 		return 'Daily Note Aggregation';
 	}
 
+	getIcon(): string {
+		return 'calendar';
+	}
+
 	async onOpen() {
 		const container = this.contentEl;
 		container.empty();
@@ -49,7 +53,7 @@ export class DailyNoteAggregationView extends ItemView {
 			});
 			link.addEventListener('click', (e) => {
 				e.preventDefault();
-				this.app.workspace.getLeaf(false).openFile(file);
+				this.app.workspace.getLeaf('tab').openFile(file);
 			});
 
 			const contentContainer = noteSection.createDiv({ cls: 'daily-note-content' });
